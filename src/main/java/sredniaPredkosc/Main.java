@@ -9,13 +9,14 @@ public class Main {
         int dataSet, v1, v2, averageSpeed;
 
         dataSet = scanner.nextInt();
-        int[] table = new int[dataSet];
+
+        int[] table2 = new int[dataSet * 2];
         if (dataSet < 1 || dataSet > 1000) {
             System.out.println("The data set must be between 1 and 1000");
             dataSet = scanner.nextInt();
 
         } else dataSet = dataSet;
-
+        int[] table = new int[dataSet];
         for (int i = 0; i < dataSet; i++) {
             v1 = scanner.nextInt();
             v2 = scanner.nextInt();
